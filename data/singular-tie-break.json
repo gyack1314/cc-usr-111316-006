@@ -1,0 +1,79 @@
+{
+  "kind": "reconciliation",
+  "bottom_ids": [
+    "a:q1",
+    "a:q2",
+    "b:q1"
+  ],
+  "nodes": [
+    {
+      "id": "a:q1",
+      "coefficients": {
+        "a:q1": "1"
+      }
+    },
+    {
+      "id": "a:q2",
+      "coefficients": {
+        "a:q2": "1"
+      }
+    },
+    {
+      "id": "b:q1",
+      "coefficients": {
+        "b:q1": "1"
+      }
+    },
+    {
+      "id": "a:year",
+      "coefficients": {
+        "a:q1": "1",
+        "a:q2": "1"
+      }
+    }
+  ],
+  "predictions": [
+    "4",
+    null,
+    "3",
+    null
+  ],
+  "covariance": [
+    ["1", "0", "0", "0"],
+    ["0", "1", "0", "0"],
+    ["0", "0", "1", "0"],
+    ["0", "0", "0", "1"]
+  ],
+  "lower_bounds": [
+    "0",
+    "0",
+    "0"
+  ],
+  "upper_bounds": [
+    null,
+    null,
+    null
+  ],
+  "reference": [
+    "4",
+    "6",
+    "3"
+  ],
+  "rho": "2",
+  "queries": [
+    {
+      "id": "a:total",
+      "coefficients": {
+        "a:q1": "1",
+        "a:q2": "1"
+      }
+    },
+    {
+      "id": "a:q2-share",
+      "coefficients": {
+        "a:q2": "1"
+      }
+    }
+  ],
+  "rank_tolerance": "1/10000000000"
+}

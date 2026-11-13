@@ -1,0 +1,137 @@
+{
+  "kind": "reconciliation",
+  "bottom_ids": [
+    "a:q1",
+    "a:q2",
+    "b:q1",
+    "b:q2",
+    "x:net-transfer"
+  ],
+  "nodes": [
+    {
+      "id": "a:q1",
+      "coefficients": {
+        "a:q1": "1"
+      }
+    },
+    {
+      "id": "a:q2",
+      "coefficients": {
+        "a:q2": "1"
+      }
+    },
+    {
+      "id": "b:q1",
+      "coefficients": {
+        "b:q1": "1"
+      }
+    },
+    {
+      "id": "b:q2",
+      "coefficients": {
+        "b:q2": "1"
+      }
+    },
+    {
+      "id": "x:net-transfer",
+      "coefficients": {
+        "x:net-transfer": "1"
+      }
+    },
+    {
+      "id": "a:year",
+      "coefficients": {
+        "a:q1": "1",
+        "a:q2": "1"
+      }
+    },
+    {
+      "id": "b:year",
+      "coefficients": {
+        "b:q1": "1",
+        "b:q2": "1"
+      }
+    },
+    {
+      "id": "all:year",
+      "coefficients": {
+        "a:q1": "1",
+        "a:q2": "1",
+        "b:q1": "1",
+        "b:q2": "1",
+        "x:net-transfer": "1"
+      }
+    }
+  ],
+  "predictions": [
+    "10",
+    null,
+    "6",
+    "8",
+    "-3",
+    "15",
+    null,
+    "22"
+  ],
+  "covariance": [
+    ["2", "0", "0", "0", "0", "1", "0", "1"],
+    ["0", "1", "0", "0", "0", "0", "0", "0"],
+    ["0", "0", "2", "0", "0", "0", "1", "1"],
+    ["0", "0", "0", "1", "0", "0", "1", "1"],
+    ["0", "0", "0", "0", "1", "0", "0", "1"],
+    ["1", "0", "0", "0", "0", "1", "0", "1"],
+    ["0", "0", "1", "1", "0", "0", "2", "1"],
+    ["1", "0", "1", "1", "1", "1", "1", "5"]
+  ],
+  "lower_bounds": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "-100"
+  ],
+  "upper_bounds": [
+    null,
+    null,
+    null,
+    null,
+    "0"
+  ],
+  "reference": [
+    "10",
+    "5",
+    "6",
+    "8",
+    "-3"
+  ],
+  "rho": "12",
+  "queries": [
+    {
+      "id": "a:year",
+      "coefficients": {
+        "a:q1": "1",
+        "a:q2": "1"
+      }
+    },
+    {
+      "id": "net-position",
+      "coefficients": {
+        "x:net-transfer": "1"
+      }
+    },
+    {
+      "id": "all:year",
+      "coefficients": {
+        "a:q1": "1",
+        "a:q2": "1",
+        "b:q1": "1",
+        "b:q2": "1",
+        "x:net-transfer": "1"
+      }
+    }
+  ],
+  "rank_tolerance": "1/10000000000",
+  "net_transfer": [
+    "x:net-transfer"
+  ]
+}
